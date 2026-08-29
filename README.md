@@ -1,10 +1,12 @@
- Termos levantados pelo Gemini durante o curso de Desenvolvimento Front-End da Dank-Code.
+ Termos levantados pelo Gemini durante o curso de Desenvolvimento Front-End da Danki-Code.
 
 O propósito é conseguir dialogar e acompanhar uma IA sem auxílio de livros ou tutoriais.
-==========================================================================================================================================================================================================
+
 A CÓPIA, DISTRIBUIÇÃO E DIVULGAÇÃO É LIVRE, DESDE QUE CITADA A FONTE. EM CASO DE SER COGITADA QUALQUER REMUNERAÇÃO, OS MEIOS DISPONÍVEIS PODEM SER CONSEGUIDOS E CHECADOS EM https://librandi.adv.br/
 DESDE JÁ, MEU MUITO OBRIGADO (Non in pane solo vivet homo, sed in omni verbo quod procedit de ore Dei)
-==========================================================================================================================================================================================================
+
+O aqui contido é fruto de especificações minhas ao Gemini. Houve, é claro, supervisão e comparação com o fornecido pela Danki-Code
+
 📚 Levantamento de Palavras-Chave, Termos e Jargões
 Reunimos aqui os principais termos técnicos, propriedades e jargões do desenvolvimento front-end utilizados ao longo dos nossos exercícios:
 1. Estrutura & HTML
