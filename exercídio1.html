@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DESENVOLVIMENTO FRONT-END NA ERA DA INTELIGÊNCIA ARTIFICIAL</title>
+    <title>Título da Sua Página</title>
     <style>
-        /* Ajusta o corpo para ocupar 100% da tela visível sem barras de rolagem */
+        /* Ajusta o corpo para ocupar a tela sem barras de rolagem */
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Elimina qualquer barra de rolagem */
+            overflow: hidden;
             text-align: center;
-            background-color: lightgray; /* Cor de fundo do pai (body) */
+            background-color: lightgray;
+            font-family: sans-serif;
         }
 
         h1 {
@@ -22,46 +23,79 @@
 
         p {
             margin-top: 0;
-            margin-bottom: 15px;
-        }
-
-        /* Regras gerais para as 3 caixas */
-        .caixa {
-            width: 80%;            /* Ajusta a largura dinamicamente ao navegador */
-            height: 22vh;          /* Altura baseada no tamanho da tela (Viewport Height) */
-            border: 2px solid black;
             margin-bottom: 10px;
         }
 
-        /* 1ª Caixa: Estilo Padrão */
+        /* --- ESTILOS DAS CAIXAS --- */
+        .caixa {
+            width: 80%;
+            height: 15vh;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .caixa-1 {
-            margin-left: auto;     /* Centraliza utilizando margem */
-            margin-right: auto;
+            margin: 0 auto 10px auto;
             background-color: white;
         }
 
-        /* 2ª Caixa: Usa INHERIT (Herda a cor cinza do body) */
         .caixa-2 {
-            margin: 0 auto;        /* Centraliza a caixa do meio no HTML */
-            background-color: inherit; /* Herda a cor do elemento pai (body) */
+            margin: 0 auto 10px auto;
+            background-color: inherit; /* Herda a cor cinza do body */
         }
 
-        /* 3ª Caixa: Usa INITIAL (Reseta para o valor padrão do CSS) */
         .caixa-3 {
-            margin-left: auto;
-            margin-right: auto;
-            background-color: initial; /* Reseta para o padrão transparente do CSS */
+            margin: 0 auto 10px auto;
+            background-color: initial; /* Reseta para o padrão transparente */
+        }
+
+        /* --- NOVAS REGRAS DE CSS SOLICITADAS --- */
+
+        /* 1. Altera a cor de fundo do campo required para amarelo */
+        input:required {
+            background-color: yellow;
+        }
+
+        /* 2. Deixa o botão disabled mais opaco (semi-transparente) */
+        button:disabled {
+            opacity: 0.4; /* 40% de opacidade */
+            cursor: not-allowed;
+        }
+
+        /* 3. Borda azul para qualquer elemento com atributo data-type="primary" */
+        [data-type="primary"] {
+            border: 3px solid blue;
         }
     </style>
 </head>
 <body>
 
     <h1>Exercício 01</h1>
-    <p>Arquivo criado com auxílio de Inteligência Artificial como prática de parte do curso de desenvolvimento front-end.</p>
+    <p>Arquivo criado como prática de parte do curso de desenvolvimento front-end.</p>
 
-    <div class="caixa caixa-1">Caixa 1</div>
-    <div class="caixa caixa-2">Caixa 2 (inherit)</div>
-    <div class="caixa caixa-3">Caixa 3 (initial)</div>
+    <!-- Caixa 1 -->
+    <div class="caixa caixa-1">
+        Caixa 1
+    </div>
+
+    <!-- Caixa 2 (com atributo data-type="primary" que aplica a borda azul) -->
+    <div class="caixa caixa-2" data-type="primary">
+        Caixa 2 (inherit + borda azul data-type="primary")
+    </div>
+
+    <!-- Caixa 3 com o formulário de exemplo dentro -->
+    <div class="caixa caixa-3">
+        <form>
+            <!-- Campo Required (fica amarelo) -->
+            <input type="text" placeholder="Campo obrigatório" required>
+            
+            <!-- Botão Disabled (fica mais opaco) -->
+            <button type="button" disabled>Botão Desativado</button>
+        </form>
+    </div>
 
 </body>
 </html>
