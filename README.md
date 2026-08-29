@@ -1,4 +1,4 @@
- Termos levantados pelo Gemini durante o curso de Desenvolvimento Front-End da Dank-Code.
+ Termos levantados pelo Gemini durante o curso de Desenvolvimento Front-End da Danki-Code.
 
 O propósito é conseguir dialogar e acompanhar uma IA sem auxílio de livros ou tutoriais. A presença de Inteligências Artificiais nas mais diversas profissões já não pode ser ignorada; e se ignorada não pode ser, então devemos nos adequar a ela.
 
