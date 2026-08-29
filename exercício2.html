@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESENVOLVIMENTO EM FRONT-END</title>
+    <style>
+        /* Ajusta o corpo para ocupar 100% da tela visível sem barras de rolagem */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Elimina qualquer barra de rolagem */
+            text-align: center;
+            background-color: lightgray; /* Cor de fundo do pai (body) */
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* Regras gerais para as 3 caixas */
+        .caixa {
+            width: 80%;            /* Ajusta a largura dinamicamente ao navegador */
+            height: 22vh;          /* Altura baseada no tamanho da tela (Viewport Height) */
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+
+        /* 1ª Caixa: Estilo Padrão */
+        .caixa-1 {
+            margin-left: auto;     /* Centraliza utilizando margem */
+            margin-right: auto;
+            background-color: white;
+        }
+
+        /* 2ª Caixa: Usa INHERIT (Herda a cor cinza do body) */
+        .caixa-2 {
+            margin: 0 auto;        /* Centraliza a caixa do meio no HTML */
+            background-color: inherit; /* Herda a cor do elemento pai (body) */
+        }
+
+        /* 3ª Caixa: Usa INITIAL (Reseta para o valor padrão do CSS) */
+        .caixa-3 {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: initial; /* Reseta para o padrão transparente do CSS */
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Exercício 02</h1>
+    <p>Arquivo criado, com ajuda de Inteligência Artificial como prática do curso de desenvolvimento front-end.</p>
+
+    <div class="caixa caixa-1">Caixa 1</div>
+    <div class="caixa caixa-2">Caixa 2 (inherit)</div>
+    <div class="caixa caixa-3">Caixa 3 (initial)</div>
+
+</body>
+</html>
