@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício: Seção com Fundo Estilizado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Configuração da Seção com Fundo Estilizado */
+        .secao-fundo {
+            /* 1. Gradiente linear (azul semi-transparente para transparente) sobre a imagem */
+            background-image: 
+                linear-gradient(to bottom, rgba(0, 0, 255, 0.6), rgba(0, 0, 0, 0)), 
+                url("https://pixnio.com/free-images/2025/01/28/2025-01-28-08-19-45-576x864.jpg");
+
+            /* 2. Cobre todo o espaço da seção */
+            background-size: cover;
+
+            /* 3. Centraliza a imagem no fundo */
+            background-position: center;
+
+            /* 4. Efeito Parallax (imagem fixa na rolagem) */
+            background-attachment: fixed;
+
+            /* Dimensões e alinhamento do conteúdo da seção */
+            height: 100vh; /* Ocupa 100% da altura da tela */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .secao-fundo h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .secao-fundo p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Seção secundária criada para permitir a rolagem da página */
+        .conteudo-extra {
+            height: 100vh;
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Seção principal com o fundo customizado -->
+    <section class="secao-fundo">
+        <h1>Exercício de Background</h1>
+        <p>Esta seção utiliza o gradiente azul sobreposto à imagem do Pixnio com o efeito Parallax ativo.</p>
+    </section>
+
+    <!-- Seção de conteúdo extra para testar a rolagem -->
+    <div class="conteudo-extra">
+        <h2>Role a página para cima e para baixo para ver o efeito Parallax em ação!</h2>
+    </div>
+
+</body>
+</html>
