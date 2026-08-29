@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10 e 11 - Atributos Personalizados e Comentários</title>
+
+    <style>
+        /* ==========================================================================
+           EXERCÍCIO 11: COMENTÁRIOS DE ORGANIZAÇÃO NO CSS
+           ========================================================================== */
+
+        /* --- Estilo Geral da Página --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        /* --- Estilo do Cabeçalho --- */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        /* --- Estilo do Conteúdo Principal --- */
+        main {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card-produto {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* ==========================================================================
+           EXERCÍCIO 10: ESTILIZANDO COM ATRIBUTOS PERSONALIZADOS (data-*)
+           ========================================================================== */
+
+        /* 1. Imagem com o atributo data-descricao="Produto X" */
+        img[data-descricao="Produto X"] {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 6px;
+            transition: opacity 0.3s ease; /* Transição suave na opacidade */
+        }
+
+        /* Altera a opacidade da imagem ao passar o mouse (:hover) */
+        img[data-descricao="Produto X"]:hover {
+            opacity: 0.7; /* Opacidade reduzida */
+            cursor: pointer;
+        }
+
+        /* 2. Botão com o atributo data-action="comprar" */
+        button[data-action="comprar"] {
+            background-color: #27ae60; /* Fundo verde destacado */
+            color: white;
+            border: 3px solid #1e8449; /* Borda diferenciada */
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        button[data-action="comprar"]:hover {
+            background-color: #219150;
+            transform: scale(1.03); /* Efeito de leve aumento ao passar o mouse */
+        }
+
+        /* --- Estilo do Rodapé --- */
+        footer {
+            background-color: #1a252f;
+            color: #aaa;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         EXERCÍCIO 11: COMENTÁRIOS DE ORGANIZAÇÃO NO HTML
+         ========================================================================== -->
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Loja Virtual Front-End</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="card-produto">
+            <h2>Destaque do Mês</h2>
+
+            <!-- Exercício 10: Imagem com atributo personalizado data-descricao -->
+            <img src="https://picsum.photos/400/300" alt="Produto X" data-descricao="Produto X">
+
+            <p>Aproveite nossa promoção exclusiva aprendendo desenvolvimento Front-End!</p>
+
+            <!-- Exercício 10: Botão com atributo personalizado data-action -->
+            <button type="button" data-action="comprar">Comprar Agora</button>
+        </div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
