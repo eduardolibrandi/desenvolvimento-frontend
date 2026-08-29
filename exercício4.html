@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Manipulando Elementos via Atributos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        input, select, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* --- REGRAS DO EXERCÍCIO --- */
+
+        /* 1. Altera a cor de fundo do campo required para amarelo */
+        input:required {
+            background-color: yellow;
+        }
+
+        /* 2. Torna o botão disabled mais opaco (semi-transparente) */
+        button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        /* 3. Aplica borda azul ao elemento com atributo data-type="primary" */
+        [data-type="primary"] {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercício: Manipulando Atributos</h1>
+
+    <form>
+        <!-- Campo de texto com required -->
+        <input type="text" placeholder="Campo obrigatório" required>
+
+        <!-- Campo de seleção com data-type="primary" -->
+        <select data-type="primary">
+            <option value="">Selecione uma opção...</option>
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+        </select>
+
+        <!-- Botão com disabled -->
+        <button type="button" disabled>Enviar Formuário</button>
+    </form>
+
+</body>
+</html>
